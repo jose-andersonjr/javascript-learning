@@ -105,3 +105,77 @@ console.log(list)
 list.unshift('a')
 console.log(list)
 
+// Objetos
+const product = {
+    name: 'Camisa',
+    price: 15.99,
+    inStock: true,
+    sizes: ['P', 'M', 'G'],
+    'Main color': 'Blue',
+
+}
+
+console.log(product.name)
+
+console.log(product['name'])
+
+console.log['Main color']
+
+// Destructing
+const {price, inStock} = product
+
+console.log(price)
+console.log(inStock)
+
+const [n1, n2] = list
+
+console.log(n1)
+console.log(n2)
+
+// JSON - JavaScript Object Notation
+
+const dog = {
+    name: 'Shark',
+    age: 10,
+
+}
+
+const json = JSON.stringify(dog)
+
+console.log(json)
+
+const obj = JSON.parse(json)
+
+console.log(obj)
+
+const jsonErrado = '{"name":"teste", "surname":"Testando"}'
+
+console.log(jsonErrado)
+
+const obj2 = JSON.parse(jsonErrado)
+
+console.log(obj2)
+
+// Estruturas condicionais
+const a = 10
+
+if(a > 8){
+    console.log("A é maior que 8")
+}
+
+const b = "sMatheus"
+
+if (b === "João") {
+    console.log('O nome é João')
+} else if (b === "Pedro"){
+    console.log('O nome é Pedro')
+} else{
+    console.log('Não encontramos o nome desse usuário!')
+}
+
+const someNumber = 14
+
+// if ternário
+
+let testingANumber = someNumber < 20 ? 'Yes':'No'
+console.log(testingANumber)
