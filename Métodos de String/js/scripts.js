@@ -47,3 +47,4 @@ let frase3 = 'Eu quero a última palavra teste desta frase de teste'
 
 console.log(frase3.indexOf('teste'))
 console.log(frase3.lastIndexOf('teste'))
+
