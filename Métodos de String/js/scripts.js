@@ -21,8 +21,8 @@ console.log(ipsom)
  let novaFrase = frase.replace('Ipsom', 'Epsom')
  console.log(novaFrase)
 =======
-let novaFrase = frase.replace('Ipsom', 'Epsom')
-console.log(novaFrase)
+ let novaFrase = frase.replace('Ipsom', 'Epsom')
+ console.log(novaFrase)
 
 // toLowerCase
 
