@@ -1,15 +1,17 @@
-// setTimeout
-console.log('Antes do timeout')
+//clearTimeout na prática
+let x = 0
+let myTimer = setTimeout(function (){
+    console.log("O x 0 é 0")
+}, 1500)
 
-setTimeout(function (){
-    console.log('Testando o setTimeout')
-}, 2000)
+x = 5
 
-console.log('Depois do timeout')
+if (x > 0) {
+    clearTimeout(myTimer)
+    console.log('O x passou de 0')
+}
 
-// setInterval
-setInterval(function() {
-    
-    console.log('Testando interval')
-
-}, 1000)
+// clearSetInterval na prática
+let myInterval = setiNTERVAL(FUNCTION () {
+    consol.elog()
+})
