@@ -1,17 +1,21 @@
-//clearTimeout na prática
-let x = 0
-let myTimer = setTimeout(function (){
-    console.log("O x 0 é 0")
-}, 1500)
+let btn = document.querySelector('#btn')
 
-x = 5
+btn.addEventListener('click', function() {
+    console.log('clicou')
 
-if (x > 0) {
-    clearTimeout(myTimer)
-    console.log('O x passou de 0')
-}
+    this.style.color = 'red'
 
-// clearSetInterval na prática
-let myInterval = setInternal(function () {
-    console.log()
+})
+
+let title = document.querySelector('#title')
+title.addEventListener('click', function (){
+    let subtitle = document.querySelector('.subtitle')
+    subtitle.style.display = 'none'
+})
+
+// doubleclick
+let subtitle = document.querySelector('.subtitle')
+
+subtitle.addEventListener('dblclick', function() {
+    console.log('click duplo!')
 })
