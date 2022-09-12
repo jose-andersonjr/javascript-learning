@@ -1,16 +1,22 @@
-window.onload = function() {
+var x = 0
 
-    console.log('Carregou o DOM')
+var myTimer = setTimeout(function(){
+    console.log('O x é igual a 0')
+}, 2000)
 
-    let title2 = document.querySelector('#title')
+x = 5
 
-    console.log(title2)
-
+if (x >= 0){
+    clearTimeout(myTimer)
+    console.log('O valor de x é maior que 0')
 }
 
-console.log('Carregou o JS')
+//clearInterval na prática
+var myInterval = setInterval(function(){
+    console.log('Imprimindo interval')
+}, 500)
 
-let title = document.querySelector('#title')
-
-console.log(title)
-
+setTimeout(function() {
+    console.log('Não precisamos mais repetir')
+    clearInterval(myInterval)
+}, 1500)
